@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="header__content">
+                <a href="info.html" class="header__logo">
+                    <img src="img/salut.svg" alt="salut">
+                </a>
+            <div class="header__info">
+                <h2>Salut! Coffee?</h2>
+                <button class="btn btn__address">ул. Первомайская, 1а</button>
+            </div>
+            <div class="header__lang">
+                <button class="btn btn__lang btn__lang--selected">Ru</button>
+                <button class="btn btn__lang ">En</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+       <section class="listing">
+           <div class="listing__preview">
+               <div class="listing-slider swiper">
+                   <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                           <div class="listing__preview--item">
+                               <div class="listing__preview">
+                                   <img src="img/demi-deherrera-L-sm1B4L1Ns-unsplash.png" alt="demi-deherrera-L-sm1B4L1Ns-unsplash.png">
+                               </div>
+                               <div class="listing__info">
+                                   <h3>Сырники с вишней</h3>
+                                   <span>784 ₽</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="listing__preview--item">
+                               <div class="listing__preview">
+                                   <img src="img/demi-deherrera-L-sm1B4L1Ns-unsplash1.png" alt="demi-deherrera-L-sm1B4L1Ns-unsplash1.png">
+                               </div>
+                               <div class="listing__info">
+                                   <h3>Айс матча</h3>
+                                   <span>345 ₽</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="listing__preview--item">
+                               <div class="listing__preview">
+                                   <img src="img/demi-deherrera-L-sm1B4L1Ns-unsplash2.png" alt="demi-deherrera-L-sm1B4L1Ns-unsplash2.png">
+                               </div>
+                               <div class="listing__info">
+                                   <h3>Миндальный пирог</h3>
+                                   <span>254 ₽</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-slide">
+                           <div class="listing__preview--item">
+                               <div class="listing__preview">
+                                   <img src="img/demi-deherrera-L-sm1B4L1Ns-unsplash4.png" alt="demi-deherrera-L-sm1B4L1Ns-unsplash4.png">
+                               </div>
+                               <div class="listing__info">
+                                   <h3>Шакшука</h3>
+                                   <span>500 ₽</span>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+               </div>
+           </div>
+           <div class="listing__menu">
+               <button class="btn btn__burger">
+               </button>
+                   <ul class="menu">
+                       <li class="menu__item menu__item--active" data-id="dishes">
+                          Блюда
+                       </li>
+                       <li class="menu__item" data-id="desserts">
+                            Десерты
+                       </li>
+                       <li class="menu__item " data-id="coffee">
+                           Кофе
+                       </li>
+                       <li class="menu__item " data-id="drinks">
+                          Напитки
+                       </li>
+                   </ul>
+           </div>
+           <div class="tab tab--active" id="dishes">
+               <div class="product__list">
+                   <div class="product__item">
+                       <a href="single.html" class="product__img">
+                           <img src="img/Picture.png" alt="Picture.png">
+                       </a>
+                       <span>500 ₽</span>
+                       <h4>Шакшука</h4>
+                   </div>
+                   <div class="product__item">
+                       <a href="single.html" class="product__img">
+                           <img src="img/Top.png" alt="Picture.png">
+                       </a>
+                       <span>678 ₽</span>
+                       <h4>Свежий зеленый салат с креветками</h4>
+                   </div>
+                   <div class="product__item">
+                       <a href="single.html" class="product__img">
+                           <img src="img/0ab2152eef6b17cba678eb9dac3e3b8fc6afc4d0.jpg" alt="Picture.png">
+                       </a>
+                       <span>500 ₽</span>
+                       <h4>Шакшука</h4>
+                   </div>
+                   <div class="product__item">
+                       <a href="single.html" class="product__img">
+                           <img src="img/1f9da18e48052832b2253e2897ece316b0ce4fff.png" alt="Picture.png">
+                       </a>
+                       <span>500 ₽</span>
+                       <h4>Шакшука</h4>
+                   </div>
+                   <div class="product__item">
+                       <a href="single.html" class="product__img">
+                           <img src="img/1ff9c5d40f0832296e5e7d74c19fc83845cf39a1.png" alt="Picture.png">
+                       </a>
+                       <span>500 ₽</span>
+                       <h4>Шакшука</h4>
+                   </div>
+                   <div class="product__item">
+                       <a href="single.html" class="product__img">
+                           <img src="img/8b56f65fcbbf63a9472c64745e03524673340351.jpg" alt="Picture.png">
+                       </a>
+                       <span>500 ₽</span>
+                       <h4>Шакшука</h4>
+                   </div>
+               </div>
+           </div>
+           <div class="tab " id="desserts"></div>
+           <div class="tab " id="coffee"></div>
+           <div class="tab " id="drinks"></div>
+       </section>
+
+    </main>
+    <footer>
+        <a  href="" class="btn btn__cart">
+            <img src="img/Picture.png" alt="">
+            <img src="img/Picture.png" alt="">
+            <span>+2</span>
+        </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
