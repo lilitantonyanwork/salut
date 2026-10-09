@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Готовим заказ</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <section class="order">
+            <div class="order__head">
+                <h1>Заказы</h1>
+                <div class="order__tabs">
+                    <button type="button" class="order__tab is-selected" data-order="413">№413</button>
+                    <button type="button" class="order__tab order__tab--done" data-order="416">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                            <path d="M2.5 7.2 5.4 10.1 11.5 3.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        №416
+                    </button>
+                </div>
+            </div>
+            <div class="order__status" id="order-status">Готовится</div>
+            <h2 class="order__subtitle">Способ получения заказа</h2>
+            <div class="order__ways">
+                <div class="method is-selected method--order">
+                    <span class="method__head">
+                        <span class="method__name" id="order-method-name">Стол</span>
+ <svg class="method__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                         <path d="M21.4375 21.875C21.4375 22.3589 21.0455 22.75 20.5625 22.75H3.9375C3.4545 22.75 3.0625 22.3589 3.0625 21.875C3.0625 21.3911 3.4545 21 3.9375 21H20.5625C21.0455 21 21.4375 21.3911 21.4375 21.875ZM24.0625 10.9375V12.6875C24.0625 14.3763 22.6888 15.75 21 15.75H19.5991C19.1923 17.7441 17.4248 19.25 15.3125 19.25H9.1875C6.77513 19.25 4.8125 17.2874 4.8125 14.875V7.875C4.8125 6.42775 5.99025 5.25 7.4375 5.25H17.0625C18.5098 5.25 19.6875 6.42775 19.6875 7.875H21C22.6888 7.875 24.0625 9.24875 24.0625 10.9375ZM10.3189 10.6059C10.1561 10.7695 10.0625 10.9944 10.0625 11.2245V12.6875C10.0625 12.9281 10.2585 13.125 10.5 13.125H11.375C11.6165 13.125 11.8125 12.9281 11.8125 12.6875V11.2245C11.8125 10.9944 11.7189 10.7686 11.5561 10.6059L10.9375 9.98725L10.3189 10.6059ZM17.9375 7.875C17.9375 7.392 17.5446 7 17.0625 7H11.8125V8.38775L12.7934 9.36863C13.2895 9.86388 13.5625 10.5236 13.5625 11.2245V12.6875C13.5625 13.8941 12.5808 14.875 11.375 14.875H10.5C9.29425 14.875 8.3125 13.8941 8.3125 12.6875V11.2245C8.3125 10.5236 8.5855 9.86388 9.08163 9.36863L10.0625 8.38775V7H7.4375C6.95538 7 6.5625 7.392 6.5625 7.875V14.875C6.5625 16.3223 7.74025 17.5 9.1875 17.5H15.3125C16.7598 17.5 17.9375 16.3223 17.9375 14.875V7.875ZM22.3125 10.9375C22.3125 10.2139 21.7236 9.625 21 9.625H19.6875V14H21C21.7236 14 22.3125 13.4111 22.3125 12.6875V10.9375Z" fill="#597DF0"/>
+                        </svg>
+                    </span>
+                    <span class="method__value" id="order-method-value">2</span>
+                    <span class="method__text" id="order-method-text">Ожидайте свой заказ за столом</span>
+                </div>
+                <button type="button" class="order__tip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M1.66406 10.6893C1.66406 7.04128 4.62135 4.08398 8.26936 4.08398C10.6687 4.08398 12.8197 5.36515 13.9997 7.29042C15.1796 5.36515 17.3306 4.08398 19.73 4.08398C23.3779 4.08398 26.3353 7.04128 26.3353 10.6893C26.3353 11.792 26.1629 12.764 25.7634 13.7151C25.3681 14.6564 24.7675 15.5362 23.9665 16.4755C22.9012 17.7247 21.3996 19.167 19.4174 21.071C18.4786 21.973 17.4319 22.9784 16.2727 24.1159C15.0125 25.3524 12.9868 25.3524 11.7268 24.1159C10.5675 22.9784 9.52076 21.973 8.58186 21.071C6.59974 19.167 5.09813 17.7247 4.03287 16.4755C3.23182 15.5362 2.63124 14.6564 2.23589 13.7151C1.83648 12.764 1.66406 11.792 1.66406 10.6893ZM8.26936 5.83398C5.58784 5.83398 3.41406 8.00778 3.41406 10.6893C3.41406 11.5956 3.55314 12.332 3.84939 13.0375C4.14969 13.7525 4.62891 14.4775 5.36443 15.34C6.37191 16.5214 7.7744 17.8683 9.70424 19.7218C10.654 20.634 11.7314 21.6687 12.9523 22.8669C13.5318 23.4355 14.4675 23.4355 15.047 22.8669C16.2679 21.6687 17.3453 20.634 18.2951 19.7218C20.2249 17.8684 21.6274 16.5214 22.6349 15.34C23.3704 14.4775 23.8496 13.7525 24.1499 13.0375C24.4462 12.332 24.5853 11.5956 24.5853 10.6893C24.5853 8.00778 22.4114 5.83398 19.73 5.83398C17.519 5.83398 15.5984 7.30888 14.9955 9.30978C14.8145 9.91098 14.2443 10.0269 13.9997 10.0269C13.755 10.0269 13.1849 9.91098 13.0038 9.30978C12.4009 7.30888 10.4803 5.83398 8.26936 5.83398Z" fill-rule="evenodd" clip-rule="evenodd" fill="#597DF0"/>
+                    </svg>
+                    <span>Оставить чаевые</span>
+                </button>
+            </div>
+            <h2 class="order__count">Заказ <span id="order-qty">3 товара</span></h2>
+            <div class="order__list" id="order-list">
+                <div class="order-item">
+                    <div class="">
+                        <img src="img/product.png" alt="">
+                    </div>
+                    <div class="cart__item--info">
+                        <h3>Айс латте</h3>
+                        <span>+ миндальное молоко</span>
+
+                    </div>
+                </div>
+                <div class="order-item">
+                    <div class="">
+                        <img src="img/product.png" alt="">
+                    </div>
+                    <div class="cart__item--info">
+                        <h3>Айс латте</h3>
+                        <span>+ миндальное молоко</span>
+
+                    </div>
+                </div>
+                <div class="order-item">
+                    <div class="">
+                        <img src="img/product.png" alt="">
+                    </div>
+                    <div class="cart__item--info">
+                        <h3>Айс латте</h3>
+                        <span>+ миндальное молоко</span>
+
+                    </div>
+                </div>
+                <div class="order-item">
+                    <div class="">
+                        <img src="img/product.png" alt="">
+                    </div>
+                    <div class="cart__item--info">
+                        <h3>Айс латте</h3>
+                        <span>+ миндальное молоко</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order__actions">
+                <button type="button" class="order__mail" id="send-receipt">Отправить чек на почту</button>
+                <a href="listing.html" class="order__new">Новый заказ</a>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal modal--receipt" id="modal-receipt">
+        <div class="modal__content">
+            <div class="receipt__head">
+                <h2>Куда отправить чек?</h2>
+                <button type="button" class="btn btn__close" id="receipt-close" aria-label="Закрыть"></button>
+            </div>
+            <div class="table-field__row">
+                <label class="table-field__text is-placeholder" for="receipt-email" id="table-text">Email</label>
+                <input class="receipt__input" id="receipt-email" type="email" placeholder="" autocomplete="email">
+
+            </div>
+
+            <button type="button" class="btn btn__done" id="receipt-done">Готово</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

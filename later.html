@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Приготовим позже</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="later-page">
+    <header>
+        <div class="header__content">
+            <a href="info.html" class="header__logo">
+                <img src="img/salut.svg" alt="salut">
+            </a>
+            <div class="header__info">
+                <h2>Salut! Coffee?</h2>
+                <button class="btn btn__address">ул. Первомайская, 1а</button>
+            </div>
+            <div class="header__lang">
+                <button class="btn btn__lang btn__lang--selected">Ru</button>
+                <button class="btn btn__lang">En</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="listing">
+            <div class="listing__preview">
+                <div class="listing-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="listing__preview--item">
+                                <div class="listing__preview">
+                                    <img src="img/demi-deherrera-L-sm1B4L1Ns-unsplash.png" alt="Сырники с вишней">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="listing__preview--item">
+                                <div class="listing__preview">
+                                    <img src="img/demi-deherrera-L-sm1B4L1Ns-unsplash1.png" alt="Айс матча">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="listing__preview--item">
+                                <div class="listing__preview">
+                                    <img src="img/demi-deherrera-L-sm1B4L1Ns-unsplash2.png" alt="Миндальный пирог">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="later">
+        <div class="later__art" aria-hidden="true">
+            <svg viewBox="0 0 375 210" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <g id="later-z" fill="#1A1A1A">
+                        <rect width="96" height="16"/>
+                        <polygon points="74,16 96,16 22,42 0,42"/>
+                        <rect y="42" width="96" height="16"/>
+                    </g>
+                </defs>
+                <g fill="#1A1A1A" transform="translate(8,70) rotate(-22)">
+                    <use href="#later-z"/>
+                    <use href="#later-z" transform="translate(70,44) scale(0.7)"/>
+                    <use href="#later-z" transform="translate(118,76) scale(0.46)"/>
+                </g>
+                <polygon fill="#429346" points="258,3 380,3 380,134 198.5,90.2 206,47"/>
+                <polygon fill="#429346" points="188,135 380,135 380,202 228,202 187,153"/>
+                <polygon fill="#EB5A31" points="206,126 222,100 238,124 254,106 270,124 286,112 302,126 318,116 334,128 350,122 366,130 380,132 380,134 206,134"/>
+            </svg>
+        </div>
+        <p class="later__text">Мы еще не открылись, но вы можете оформить заказ заранее! Мы начнем готовить его сразу после открытия.</p>
+        <a href="listing.html" class="later__btn">Продолжить</a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

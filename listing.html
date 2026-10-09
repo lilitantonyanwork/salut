@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="listing-page">
     <header>
         <div class="header__content">
                 <a href="info.html" class="header__logo">
@@ -29,7 +29,7 @@
 
     <main>
        <section class="listing">
-           <div class="listing__preview">
+           <div class="listing__hero listing__preview">
                <div class="listing-slider swiper">
                    <div class="swiper-wrapper">
                        <div class="swiper-slide">
@@ -99,6 +99,7 @@
                        </li>
                    </ul>
            </div>
+           <div class="listing__feed">
            <div class="tab tab--active" id="dishes">
                <div class="product__list">
                    <div class="product__item">
@@ -148,6 +149,7 @@
            <div class="tab " id="desserts"></div>
            <div class="tab " id="coffee"></div>
            <div class="tab " id="drinks"></div>
+           </div>
        </section>
 
     </main>
@@ -158,6 +160,32 @@
             <span>+2</span>
         </a>
     </footer>
+    <div class="modal modal--menu" id="modal-menu">
+        <div class="modal__content">
+            <div class="table-sheet__head">
+                <h3>Меню</h3>
+                <button type="button" class="btn btn__close" id="table-close" aria-label="Закрыть"></button>
+            </div>
+            <ul class="modal__menu">
+                <li class="modal__menu--item">
+                    Блюда
+                </li>
+                <li class="modal__menu--item">
+                    Десерты
+                </li>
+                <li class="modal__menu--item">
+                    Кофе
+                </li>
+                <li class="modal__menu--item">
+                    Напитки
+                </li>
+                <li class="modal__menu--item">
+                    Чай
+                </li>
+            </ul>
+
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
