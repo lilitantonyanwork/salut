@@ -1773,6 +1773,8 @@ body.listing-page .listing__feed{
     min-height: 90vh;
     display: flex;
     flex-direction: column;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 .modal-img{
     margin-bottom: 32px;
