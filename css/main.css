@@ -715,9 +715,16 @@ body.listing-page .listing__feed{
 }
 .modificator__list{
     gap: 4px;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     width: 100%;
     margin-top: 12px;
+    display: none;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.modificator__list::-webkit-scrollbar{
     display: none;
 }
 .modificator__list.open{
@@ -725,6 +732,7 @@ body.listing-page .listing__feed{
 }
 .modificator__item{
     width: 152px;
+    flex: 0 0 152px;
     background: var(--snow-white);
     border-radius: 20px;
     padding: 0 9px 12px 9px;
