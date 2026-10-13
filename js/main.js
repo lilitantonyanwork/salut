@@ -18,6 +18,19 @@ if (document.querySelector('.listing-slider')) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    let menuItem = document.querySelectorAll('.menu__item');
+    menuItem.forEach(function (btn){
+        btn.addEventListener('click', function (){
+            menuItem.forEach(function (item){ item.classList.remove('menu__item--active')})
+            this.classList.add('menu__item--active');
+
+        });
+    })
+
+
+
+
+
     var listingPage = document.querySelector('.listing-page');
     var listingHero = document.querySelector('.listing__hero');
     var listingFeed = document.querySelector('.listing__feed');
@@ -217,11 +230,16 @@ document.addEventListener('DOMContentLoaded', function () {
     let modalSets = document.querySelector('#modal-sets');
     let btnBurger = document.querySelector('.btn__burger');
     let modalMenu = document.querySelector('.modal--menu');
+    let btn__cart = document.querySelector('.btn__cart');
+    let btn__done = document.querySelector('.btn__done');
+    let msgError = document.querySelector('.msg--error');
 
-    btnBurger.addEventListener('click', function (e){
-        e.preventDefault();
-        modalMenu.classList.add('open')
-    })
+    if (btnBurger) {
+        btnBurger.addEventListener('click', function (e) {
+            e.preventDefault();
+            modalMenu.classList.add('open')
+        })
+    }
 
     if (modal && modalOpen) {
         modalOpen.addEventListener('click', function (e){
@@ -246,13 +264,21 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         })
     })
-    if (modalOpen && modalSets) {
-        modalOpen.addEventListener('click', function (e){
+    if (btn__cart && modalSets) {
+        btn__cart.addEventListener('click', function (e){
             e.preventDefault();
             modalSets.classList.add('open')
         })
     }
-
+    if(btn__done){
+        btn__done.addEventListener('click', function (){
+            modal.classList.remove('open');
+            msgError.classList.add('open');
+            setTimeout(function (){
+                msgError.classList.remove('open');
+            }, 5000)
+        })
+    }
     let methods = document.querySelectorAll('.method');
     let changeTable = document.getElementById('change-table');
     let tableModal = document.getElementById('modal-table');

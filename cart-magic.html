@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <section class="cart">
+            <div class="cart__head">
+                <div class="back">
+                    <a href="listing.html" class="back__btn">
+                    </a>
+                </div>
+                <h1>Корзина</h1>
+            </div>
+            <div class="listing__menu">
+
+                <ul class="menu">
+                    <li class="menu__item menu__item--cart active" >
+                        <span>🍽</span> По готовности
+                    </li>
+                    <li class="menu__item menu__item--cart">
+                        <span>🍰 </span>Сначала десерт
+                    </li>
+                    <li class="menu__item menu__item--cart">
+                        <span>☕️</span>Сначала напитки
+                    </li>
+                    <li class="menu__item menu__item--cart">
+                       <span>🥗</span>  Сначала еда
+                    </li>
+                    <li class="menu__item menu__item--cart">
+                        <span>🧊</span> Напитки с едой!
+                    </li> <li class="menu__item menu__item--cart">
+                       <span> 🍮</span> Десерт после еды
+                    </li>
+                    <li class="menu__item menu__item--cart">
+                        <span>🍋</span> Воды с лимоном
+                    </li>
+                    <li class="menu__item menu__item--cart">
+                       <span>🥛</span> Стакан теплой воды
+                    </li>
+                </ul>
+            </div>
+            <div class="cart__count">
+                <h2>Заказ <span>3 товара</span></h2>
+            </div>
+            <div class="cart__list">
+                <div class="cart__item">
+                    <div class="cart__item--img">
+                        <img src="img/product.png" alt="">
+                    </div>
+                    <div class="cart__item--info">
+                        <h3>Айс латте</h3>
+                        <span>+ миндальное молоко</span>
+                        <div class="cart__item--price">
+                            <div class="amount">350 ₽ <span>250 мл</span></div>
+                            <div class="qty">
+                                <button class="qty__minus"></button>
+                                <span class="qty__count">1</span>
+                                <button class="qty__plus"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__item cart__item--magic">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M14.375 9.375H11.875C11.1846 9.375 10.625 8.81536 10.625 8.125V5.625C10.625 5.45924 10.5592 5.30027 10.4419 5.18306C10.3247 5.06585 10.1658 5 10 5C9.83424 5 9.67527 5.06585 9.55806 5.18306C9.44085 5.30027 9.375 5.45924 9.375 5.625V8.125C9.375 8.81536 8.81536 9.375 8.125 9.375H5.625C5.45924 9.375 5.30027 9.44085 5.18306 9.55806C5.06585 9.67527 5 9.83424 5 10C5 10.1658 5.06585 10.3247 5.18306 10.4419C5.30027 10.5592 5.45924 10.625 5.625 10.625H8.125C8.81536 10.625 9.375 11.1846 9.375 11.875V14.375C9.375 14.5408 9.44085 14.6997 9.55806 14.8169C9.67527 14.9342 9.83424 15 10 15C10.1658 15 10.3247 14.9342 10.4419 14.8169C10.5592 14.6997 10.625 14.5408 10.625 14.375V11.875C10.625 11.1846 11.1846 10.625 11.875 10.625H14.375C14.5408 10.625 14.6997 10.5592 14.8169 10.4419C14.9342 10.3247 15 10.1658 15 10C15 9.83424 14.9342 9.67527 14.8169 9.55806C14.6997 9.44085 14.5408 9.375 14.375 9.375Z" fill="white"/>
+                    </svg>
+                    <span>Добавить случайную позицию</span>
+                </div>
+                <div class="cart__allergic">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0835 1.04175C6.39314 1.04175 5.8335 1.60139 5.8335 2.29175V4.37508L3.66683 7.26397C3.45046 7.55246 3.3335 7.90336 3.3335 8.26397V16.0417C3.3335 17.3074 4.35951 18.3334 5.62516 18.3334H14.3752C15.6408 18.3334 16.6668 17.3074 16.6668 16.0417V8.26397C16.6668 7.90336 16.5498 7.55246 16.3335 7.26397L14.1668 4.37508V2.29175C14.1668 1.60139 13.6072 1.04175 12.9168 1.04175H7.0835ZM7.0835 2.29175H12.9168V4.16676H7.0835V2.29175ZM7.99809 5.41676L9.841 7.50008H14.9481L13.3856 5.41676H7.99809ZM10.0002 17.0834V8.75008H15.4168V16.0417C15.4168 16.6171 14.9505 17.0834 14.3752 17.0834H10.0002ZM8.75016 8.15353V17.0834H5.62516C5.04986 17.0834 4.5835 16.6171 4.5835 16.0417V8.26397C4.5835 8.17381 4.61274 8.08609 4.66683 8.01397L6.48372 5.59145L8.75016 8.15353Z" fill="#201F1D"/>
+                    </svg>
+                    Указать аллергены
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                        <path d="M0.157843 11.0689L4.76884 6.38395C4.86997 6.28173 4.92669 6.14374 4.92669 5.99995C4.92669 5.85616 4.86997 5.71817 4.76884 5.61595L0.158844 0.930947C0.0577688 0.828091 0.00113203 0.689653 0.00113204 0.545446C0.00113204 0.40124 0.0577689 0.262803 0.158845 0.159947C0.208221 0.109298 0.267237 0.0690458 0.332414 0.0415618C0.397591 0.0140779 0.46761 -8.03505e-05 0.538344 -8.03474e-05C0.609079 -8.03443e-05 0.679098 0.0140779 0.744275 0.0415619C0.809451 0.0690458 0.868467 0.109298 0.917844 0.159947L5.52784 4.84395C5.83077 5.15247 6.00049 5.56757 6.00049 5.99995C6.00049 6.43232 5.83077 6.84743 5.52784 7.15595L0.917844 11.8399C0.868451 11.8907 0.809373 11.9311 0.744104 11.9587C0.678835 11.9863 0.608699 12.0005 0.537844 12.0005C0.466989 12.0005 0.396853 11.9863 0.331584 11.9587C0.266314 11.9311 0.207236 11.8907 0.157843 11.8399C0.0567675 11.7371 0.000131625 11.5987 0.000131631 11.4544C0.000131637 11.3102 0.0567675 11.1718 0.157843 11.0689Z" fill="#597DF0"/>
+                    </svg>
+                </div>
+
+
+            </div>
+
+            <div class="cart__total">1 339 ₽ </div>
+        </section>
+
+    </main>
+    <footer>
+
+        <a  href="checkout.html" class="btn btn__cart">
+            Оформить
+        </a>
+    </footer>
+    <div class="modal" id="modal-allergy">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2>На что у вас аллергия?</h2>
+                <button class="btn btn__close"></button>
+            </div>
+            <div class="modal__body">
+                <label class="container">Молочные продукты
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Лесные орехи
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Моллюски
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Грибы
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <button class="btn btn__done">Готово</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-sets">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2>Положим к заказу необходимое  количество приборов</h2>
+                <button class="btn btn__close"></button>
+            </div>
+            <div class="modal__body">
+                <div class="sets__qty">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M2.5 1.875C2.84517 1.875 3.125 2.15483 3.125 2.5V7.08333C3.125 8.27877 4.04032 9.26042 5.20835 9.36567V2.5C5.20835 2.15483 5.48817 1.875 5.83335 1.875C6.17852 1.875 6.45835 2.15483 6.45835 2.5V9.36567C7.62637 9.26042 8.54167 8.27875 8.54167 7.08333V2.5C8.54167 2.15483 8.8215 1.875 9.16667 1.875C9.51183 1.875 9.79167 2.15483 9.79167 2.5V7.08333C9.79167 8.96942 8.31738 10.5112 6.45835 10.619V17.5C6.45835 17.8452 6.17852 18.125 5.83335 18.125C5.48817 18.125 5.20835 17.8452 5.20835 17.5V10.619C3.34931 10.5112 1.875 8.96942 1.875 7.08333V2.5C1.875 2.15483 2.15483 1.875 2.5 1.875Z" fill="#201F1D"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1219 1.875C14.6847 1.87496 12.709 3.85066 12.709 6.28783V11.2499C12.709 12.7457 13.9216 13.9583 15.4173 13.9583H16.8757V17.4999C16.8757 17.8451 17.1555 18.1249 17.5007 18.1249C17.8458 18.1249 18.1257 17.8451 18.1257 17.4999V2.87878C18.1257 2.32442 17.6762 1.87501 17.1219 1.875ZM16.8757 3.13443V12.7083H15.4173C14.6119 12.7083 13.959 12.0553 13.959 11.2499V6.28783C13.959 4.62388 15.2439 3.26004 16.8757 3.13443Z" fill="#201F1D"/>
+                    </svg>
+                    <span>Количество персон</span>
+                    <div class="qty">
+                        <button class="qty__minus"></button>
+                        <span class="qty__count">1</span>
+                        <button class="qty__plus"></button>
+                    </div>
+                </div>
+                <label class="container">Без приборов
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+
+                <button class="btn btn__done">Продолжить</button>
+            </div>
+        </div>
+    </div>
+    <div class="msg msg--error">
+        В заказе есть блюда, на которые у вас может быть аллергия
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

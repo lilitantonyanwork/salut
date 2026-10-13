@@ -170,13 +170,11 @@ li{
     margin-left: auto;
 }
 .header__logo{
-    width: 44px;
-    height: 44px;
-    border-radius: 100%;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--ship-cove);
 }
 .header__info h2{
     color: var(--white);
@@ -332,6 +330,7 @@ body.listing-page .listing__feed{
     width: 100%;
     height: 100%;
     position: relative;
+    display: flex;
 
 }
 .listing__preview:after{
@@ -418,6 +417,7 @@ body.listing-page .listing__feed{
 }
 .product__item{
     width: calc(100%/2 - 4px);
+    position: relative;
 }
 .product__img{
     height: 164px;
@@ -523,8 +523,7 @@ body.listing-page .listing__feed{
 .back__btn{
     width: 40px;
     height: 40px;
-    border-radius: 100%;
-    background: url('../img/back.svg') var(--snow-white) no-repeat center center;
+    background: url('../img/back.svg');
     display: flex;
     align-items: center;
     justify-content: center;
@@ -994,7 +993,7 @@ body.listing-page .listing__feed{
     align-items: center;
     border-radius: 16px;
     padding: 12px;
-    width: calc(100% - 32px);
+    width:100%;
     margin: 0 auto;
     gap: 8px;
     background: var(--snow-white);
@@ -1003,6 +1002,9 @@ body.listing-page .listing__feed{
     font-weight: 400;
 }
 .cart__allergic svg:last-child{
+    margin-left: 14px;
+}
+.cart__allergic span{
     margin-left: auto;
 }
 .cart__total{
@@ -1037,6 +1039,8 @@ body.listing-page .listing__feed{
 .modal__content{
     background: var(--white);
     border-radius: 16px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
     padding: 16px;
     width: 100%;
 }
@@ -1069,8 +1073,7 @@ body.listing-page .listing__feed{
 .btn__close{
     width: 40px;
     height: 40px;
-    border-radius: 100%;
-    background: url('../img/close.svg') var(--snow-white) no-repeat center center;
+    background: url('../img/Q-Button.svg');
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1153,17 +1156,17 @@ body.listing-page .listing__feed{
     margin-bottom: 24px;
 }
 .msg{
-    position: absolute;
+    position: fixed;
     top: 81px;
     padding: 8px 32px;
     border-radius: 416px;
     text-align: center;
-    z-index: 1;
     width: calc(100% - 32px);
     left: 50%;
     transform: translateX(-50%);
     transition: all .3s;
     display: none;
+    z-index: 9999;
 }
 .msg.open{
     display: block;
@@ -1846,4 +1849,89 @@ body.listing-page .listing__feed{
     line-height: 20px;
     font-weight: 400;
     margin-bottom: 48px;
+}
+.modal--magic h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: #201f1d;
+}
+.modal--magic p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #201f1d;
+    max-width: 343px;
+    margin: 0 auto 38px;
+}
+.modal--magic .btn__blue{
+    width: 100%;
+    margin: 0 auto 20px;
+    height: 48px;
+    font-size: 16px;
+    background: var(--shiny-blue);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 416px;
+}
+.modal--magic .modal-img{
+    justify-content: center;
+}
+.modal--magic .modal-img img{
+    height: 216px;
+}
+.modal--magic .table-sheet__head{
+    margin-bottom: 12px;
+}
+.cart__item--magic{
+    padding: 12px 12px;
+    background: url('../img/cart-magic.svg') #201f1d no-repeat right center;
+    border-radius: 16px;
+    gap: 0;
+}
+.cart__item--magic:hover{
+    background: url('../img/cart-magic.svg') var(--shiny-blue) no-repeat right center;
+
+}
+.cart__item--magic span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+
+    color: #ffffff;
+}
+.product__item .product-tag{
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    background: #F86F38;
+    border-radius: 81px;
+    color: var(--white);
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 8px;
+}
+.product__item .comming-soon{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.product__item--soon .product__img{
+    opacity: 0.5;
 }
