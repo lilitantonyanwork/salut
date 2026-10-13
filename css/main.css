@@ -1776,6 +1776,8 @@ body.listing-page .listing__feed{
 }
 .modal-img{
     margin-bottom: 32px;
+    display: flex;
+    justify-content: flex-end;
 }
 .modal--403 .modal__content h3{
     text-align: center;
@@ -1800,8 +1802,10 @@ body.listing-page .listing__feed{
     margin: auto auto 16px;
     color: var(--white);
     border-radius: 416px;
-
+    font-size: 16px;
+    font-weight: 400;
 }
+
 .modal--403  .table-sheet__head{
     padding-right: 16px;
 }
